@@ -1,1 +1,1 @@
-# dot-matrix
+# Dot matrix screen emulator
