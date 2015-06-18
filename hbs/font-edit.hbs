@@ -1,5 +1,5 @@
 <div class="font-edit">
-    <input data-field="name" type="text" value="{{name}}" />
+    <input data-field="name" type="text" value="{{name}}" autofocus/>
     <table>
         {{#each data}}
         <tr>
@@ -9,5 +9,6 @@
     </table>
     <button type="button" data-action="save">Save</button>
 
+    <a href="/#font/{{id}}/delete">delete</a>
     <a href="/#fonts">back</a>
 </div>
