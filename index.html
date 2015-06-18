@@ -3,8 +3,20 @@
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://underscorejs.org/underscore-min.js"></script>
         <script src="http://backbonejs.org/backbone-min.js"></script>
+        <script src="/bower_components/backbone.localstorage/backbone.localStorage-min.js"></script>
         <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v3.0.3.js"></script>
         <script src="/template.js"></script>
+        <style>
+            .cell {
+                border: 1px solid #AFAFAF;
+                width: 20px;
+                height: 20px;
+                background: #E8E8E8;
+            }
+            .cell.on {
+                background: limegreen;
+            }
+        </style>
     </head>
     <body>
         <div class="app"></div>

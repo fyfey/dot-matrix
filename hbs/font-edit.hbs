@@ -1,9 +1,13 @@
 <div class="font-edit">
+    <input data-field="name" type="text" value="{{name}}" />
     <table>
-        {{#each rows}}
+        {{#each data}}
         <tr>
-            {{#each this}}<td>CELL</td>{{/each}}
+            {{#each this}}<td class="cell{{#if set}} on{{/if}}" data-x="{{@index}}" data-y="{{@../index}}"></td>{{/each}}
         </tr>
         {{/each}}
     </table>
+    <button type="button" data-action="save">Save</button>
+
+    <a href="/#fonts">back</a>
 </div>
